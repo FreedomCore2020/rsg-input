@@ -19,6 +19,7 @@ RegisterNetEvent('RSGCore:Client:OnPlayerLoaded', function()
 end)
 
 RegisterNUICallback("buttonSubmit", function(data, cb)
+    PlaySoundFrontend("SELECT", "RDRO_Character_Creator_Sounds", true, 0)
     SetNuiFocus(false)
     properties:resolve(data.data)
     properties = nil
